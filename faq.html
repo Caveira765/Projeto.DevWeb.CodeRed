@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Code Red Store</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .faq-resposta {
+            display: none;
+            background-color: #333;
+            padding: 10px;
+            border-top: 1px solid #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Code Red Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="pedido.html" aria-label="Ir para formulário de pedido">Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <h2>Perguntas Frequentes (FAQ)</h2>
+
+        <section id="faq-accordion">
+            
+            <p>Dúvidas sobre pedidos, envios e produtos.</p>
+            <p style="border-bottom: 1px solid #ff0000; padding-bottom: 10px;">Clique na pergunta para ver a resposta.</p>
+
+            <article class="faq-item">
+                <button class="faq-pergunta" aria-label="Abrir resposta para: Qual o prazo de entrega?">
+                    Qual o prazo de entrega?
+                </button>
+                <div class="faq-resposta">
+                    <p>O prazo de entrega é de 5 a 10 dias úteis após a confirmação do pagamento, dependendo da sua região.</p>
+                </div>
+            </article>
+
+            <article class="faq-item">
+                <button class="faq-pergunta" aria-label="Abrir resposta para: Como rastrear meu pedido?">
+                    Como rastrear meu pedido?
+                </button>
+                <div class="faq-resposta">
+                    <p>Você receberá um código de rastreio por e-mail assim que o pedido for despachado.</p>
+                </div>
+            </article>
+
+            <article class="faq-item">
+                <button class="faq-pergunta" aria-label="Abrir resposta para: Quais as formas de pagamento?">
+                    Quais as formas de pagamento?
+                </button>
+                <div class="faq-resposta">
+                    <p>Aceitamos Cartão de Crédito, PIX e Boleto Bancário.</p>
+                </div>
+            </article>
+
+        </section>
+
+        <section id="enviar-pergunta" style="margin-top: 40px;">
+            <h2>Não encontrou sua dúvida?</h2>
+            <p>Envie sua pergunta para nossa equipe.</p>
+            
+            <form id="form-nova-pergunta">
+                <div class="form-group">
+                    <label for="seu-email">Seu E-mail (para respondermos):</label>
+                    <input type="email" id="seu-email" name="seu-email" placeholder="seuemail@exemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="sua-pergunta">Sua Pergunta:</label>
+                    <textarea id="sua-pergunta" name="sua-pergunta" rows="5" placeholder="Digite sua dúvida aqui..."></textarea>
+                </div>
+                <button type="submit">Enviar Pergunta</button>
+            </form>
+        </section>
+        
+        <img src="imagens/Banner.jpg" alt="Banner decorativo de atendimento ao cliente" style="width:100%; margin-top: 20px;">
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Code Red Store. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
