@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Code Red Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Code Red Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="pedido.html" aria-label="Ir para formulário de pedido">Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-layout">
+        
+        <div class="main-content">
+            <h2>Catálogo de Produtos</h2>
+
+            <section id="catalogo-produtos">
+                
+                <article class="produto-item">
+                    <img src="imagens/Camiseta.png" alt="Camiseta Code Red com lobo metálico">
+                    <h3>Camiseta "Code Red"</h3>
+                    <p>Camiseta oficial do álbum.</p>
+                    <p style="font-size: 1.2em; font-weight: bold;">R$ 89,90</p>
+                </article>
+
+                <article class="produto-item">
+                    <img src="imagens/Caneca.png" alt="Caneca do álbum Red String">
+                    <h3>Caneca "Red String"</h3>
+                    <p>Caneca de cerâmica do álbum Red String.</p>
+                    <p style="font-size: 1.2em; font-weight: bold;">R$ 49,90</p>
+                </article>
+
+                <article class="produto-item">
+                    <img src="imagens/Moleton.png" alt="Moletom do álbum Digital Heresy">
+                    <h3>Moletom "Digital Heresy"</h3>
+                    <p>Moletom com capuz e zíper.</p>
+                    <p style="font-size: 1.2em; font-weight: bold;">R$ 149,90</p>
+                </article>
+                
+                <article class="produto-item">
+                    <img src="imagens/Poster.png" alt="Pôster do álbum Synthwolf">
+                    <h3>Pôster "Synthwolf"</h3>
+                    <p>Pôster A3 em papel couchê.</p>
+                    <p style="font-size: 1.2em; font-weight: bold;">R$ 29,90</p>
+                </article>
+
+            </section>
+
+            <section id="tabela-tamanhos">
+                <table class="tabela-5x5">
+                    <caption>Guia de Tamanhos de Camisetas (Medidas em cm)</caption>
+                    <thead>
+                        <tr>
+                            <th>Medida</th><th>P</th><th>M</th><th>G</th><th>GG</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><th>Busto</th><td>50</td><td>52</td><td>54</td><td>56</td></tr>
+                        <tr><th>Cintura</th><td>48</td><td>50</td><td>52</td><td>54</td></tr>
+                        <tr><th>Comprimento</th><td>68</td><td>70</td><td>72</td><td>74</td></tr>
+                        <tr><th>Manga</th><td>20</td><td>21</td><td>22</td><td>23</td></tr>
+                        <tr><th>Ombro</th><td>44</td><td>46</td><td>48</td><td>50</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">Medidas aproximadas. Pode haver variação de 1-2cm.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </div>
+
+        <aside>
+            <h3>Filtros</h3>
+            <label for="filtro-cat">Categoria:</label>
+            <select id="filtro-cat" aria-label="Filtrar por categoria">
+                <option value="todos">Todos</option>
+                <option value="camisetas">Camisetas</option>
+                <option value="moletons">Moletons</option>
+                <option value="canecas">Canecas</option>
+                <option value="poster">Pôsteres</option>
+            </select>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Code Red Store. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

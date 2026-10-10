@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido - Code Red Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Code Red Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="pedido.html" aria-label="Ir para formulário de pedido">Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <h2>Formulário de Pedido</h2>
+
+        <form id="pedido-form">
+            
+            <div id="form-mensagens"></div>
+
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone (com DDD):</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+            </div>
+
+            <div class="form-group">
+                <label for="data-nasc">Data de Nascimento:</label>
+                <input type="date" id="data-nasc" name="data-nasc">
+            </div>
+
+            <div class="form-group">
+                <label for="produto">Produto de Interesse:</label>
+                <select id="produto" name="produto" aria-label="Selecione o produto">
+                    <option value="">-- Selecione --</option>
+                    <option value="camiseta-code-red">Camiseta "Code Red"</option>
+                    <option value="caneca-red-string">Caneca "Red String"</option>
+                    <option value="moletom-digital-heresy">Moletom "Digital Heresy"</option>
+                    <option value="poster-synthwolf">Pôster "Synthwolf"</option>
+                    <option value="outro">Outro (especificar abaixo)</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>Tamanho (Se aplicável: Camiseta/Moletom):</legend>
+                <div class="radio-group">
+                    <input type="radio" id="tam-p" name="tamanho" value="P">
+                    <label for="tam-p">P</label>
+                    <input type="radio" id="tam-m" name="tamanho" value="M">
+                    <label for="tam-m">M</label>
+                    <input type="radio" id="tam-g" name="tamanho" value="G">
+                    <label for="tam-g">G</label>
+                    <input type="radio" id="tam-gg" name="tamanho" value="GG">
+                    <label for="tam-gg">GG</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <input type="checkbox" id="termos" name="termos" value="aceito">
+                <label for="termos">Li e aceito os termos de serviço.</label>
+            </div>
+
+            <div class="form-group">
+                <label for="observacoes">Observações (opcional):</label>
+                <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+            </div>
+            
+            <img src="imagens/SeloSegurança.png" alt="Selo de site seguro" style="margin-bottom: 10px;" id ="selo-seguranca">
+            <br>
+
+            <button type="submit" style="padding: 15px; font-size: 1.1em;">Enviar Pedido</button>
+            <button type="reset" aria-label="Limpar formulário">Limpar</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Code Red Store. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
